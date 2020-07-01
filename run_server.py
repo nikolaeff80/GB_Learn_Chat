@@ -1,14 +1,19 @@
 import sys
+import os
+import logging
 
-from GB_Learning_chat.Mainlib.chat_server import ChatServer
+from Mainlib.chat_server import ChatServer
 
-config = "config_server.json"
+server_log = logging.getLogger('server_log')
+
+server_log.info(os.getcwd())
+config = 'config_server.json'
+server = ChatServer(sys.argv, config)
 
 if __name__ == "__main__":
-    server = ChatServer(sys.argv, config)
     try:
-        print("Server run...")
+        server_log.debug('Server run...')
         server.run()
     except KeyboardInterrupt as e:
-        print("Server shutdown...")
+        server_log.debug('Server shutdown...')
         server.shutdown()

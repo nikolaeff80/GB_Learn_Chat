@@ -1,6 +1,6 @@
 import sys
 
-from GB_Learning_chat.Mainlib.chat_client import ChatClient
+from Mainlib.chat_client import ChatClient
 
 config = "config_client.json"
 

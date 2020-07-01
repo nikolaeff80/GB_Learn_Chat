@@ -1,0 +1,27 @@
+2020-07-01 11:24:23,108 - server_log - INFO - C:\PyProjects\GB_Learning_chat
+2020-07-01 11:24:23,108 - server_log - INFO - Server run...
+2020-07-01 11:24:27,799 - server_log - ERROR - 127.0.0.1 wrote:
+NoneType: None
+2020-07-01 11:24:27,799 - server_log - INFO - b'{"action": "authenticate", "time": "2020-07-01T11:24:27.799294", "user": {"account_name": "User", "password": "Password"}}'
+2020-07-01 11:29:58,660 - server_log - INFO - C:\PyProjects\GB_Learning_chat
+2020-07-01 11:29:58,660 - server_log - INFO - Server run...
+2020-07-01 11:30:04,047 - server_log - ERROR - 127.0.0.1 wrote:
+NoneType: None
+2020-07-01 11:30:04,048 - server_log - INFO - b'{"action": "authenticate", "time": "2020-07-01T11:30:04.047273", "user": {"account_name": "User", "password": "Password"}}'
+2020-07-01 11:32:45,308 - server_log - INFO - set()
+2020-07-01 11:32:45,309 - server_log - INFO - C:\PyProjects\GB_Learning_chat
+2020-07-01 11:32:45,309 - server_log - INFO - Server run...
+2020-07-01 11:32:49,905 - server_log - ERROR - 127.0.0.1 wrote:
+NoneType: None
+2020-07-01 11:32:49,905 - server_log - INFO - b'{"action": "authenticate", "time": "2020-07-01T11:32:49.904279", "user": {"account_name": "User", "password": "Password"}}'
+2020-07-01 11:36:26,731 - INFO - server_log - C:\PyProjects\GB_Learning_chat
+2020-07-01 11:36:26,732 - DEBUG - server_log - Server run...
+2020-07-01 11:36:32,007 - ERROR - server_log - 127.0.0.1 wrote:
+NoneType: None
+2020-07-01 11:36:32,007 - INFO - server_log - b'{"action": "authenticate", "time": "2020-07-01T11:36:32.007787", "user": {"account_name": "User", "password": "Password"}}'
+2020-07-01 11:38:07,220 - INFO - server_log - C:\PyProjects\GB_Learning_chat
+2020-07-01 11:38:07,221 - INFO - server_log - 
+2020-07-01 11:38:07,221 - DEBUG - server_log - Server run...
+2020-07-01 11:38:11,148 - ERROR - server_log - 127.0.0.1 wrote:
+NoneType: None
+2020-07-01 11:38:11,148 - INFO - server_log - b'{"action": "authenticate", "time": "2020-07-01T11:38:11.148714", "user": {"account_name": "User", "password": "Password"}}'
