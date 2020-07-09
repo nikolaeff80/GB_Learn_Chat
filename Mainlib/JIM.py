@@ -1,6 +1,7 @@
 import json
 
 
+@log
 def json_pack(dict_msg):
     """
     Packing messages for sending over TCP
@@ -8,9 +9,11 @@ def json_pack(dict_msg):
     :return: str
     """
     str_msg = json.dumps(dict_msg)
+    client_log.info(f'Сообщение для отправки: {str_msg}')
     return str_msg.encode("utf8")
 
 
+@log
 def json_unpack(bt_str):
     """
     Unpacking a received message
@@ -18,6 +21,7 @@ def json_unpack(bt_str):
     :return: dict
     """
     str_decoded = bt_str.decode('utf-8')
+    client_log.info(f'Принятое сообщение: {str_decoded}')
     return json.loads(str_decoded)
 
 

@@ -23,3 +23,10 @@ sfh.setFormatter(myFormatter)
 
 server_log.addHandler(sfh)
 server_log.addHandler(Rotate_Handler)
+
+
+if __name__ == '__main__':
+    server_log.critical('Критическая ошибка')
+    server_log.error('Ошибка')
+    server_log.debug('Отладочная информация')
+    server_log.info('Информационное сообщение')

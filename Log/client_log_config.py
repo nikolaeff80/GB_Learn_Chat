@@ -19,3 +19,10 @@ cfh.setFormatter(myFormatter)
 # add handler to logger object
 
 client_log.addHandler(cfh)
+
+
+if __name__ == '__main__':
+    client_log.critical('Критическая ошибка')
+    client_log.error('Ошибка')
+    client_log.debug('Отладочная информация')
+    client_log.info('Информационное сообщение')

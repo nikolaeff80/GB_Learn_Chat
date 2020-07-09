@@ -1,44 +1,57 @@
 import datetime
-import socket
-import sys
+from socketserver import socket
+# import sys
 
-from GB_Learning_chat.Mainlib import chat_config
-from GB_Learning_chat.Mainlib.JIM import json_pack, json_unpack
-from GB_Learning_chat.Mainlib.user import User
+from Log.Log_decorators import log
+from Log.client_log_config import client_log
+from Mainlib import chat_config
+from Mainlib.JIM import json_pack
+from Mainlib.user import User
+
+
+def echo_client():
+    # Начиная с Python 3.2 сокеты имеют протокол менеджера контекста
+    # При выходе из оператора with сокет будет авторматически закрыт
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:  # Создать сокет TCP
+        sock.connect(('localhost', 7777))  # Соединиться с сервером
+        while True:
+            msg = input('Ваше сообщение: ')
+            if msg == 'exit':
+                break
+            sock.send(msg.encode('utf-8'))  # Отправить!
+            data = sock.recv(1024).decode('utf-8')
+            print('Ответ:', data)
 
 
 class ChatClient:
 
     def __init__(self, args, options_file):
-        conf = self.__get_options(args, options_file)
+        conf = self._get_options(args, options_file)
         self.host = conf['DEFAULT']['HOST']
         self.port = conf['DEFAULT']['PORT']
 
-    def send(self):
-        try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.connect((self.host, self.port))
-        except socket.error as err:
-            print("Connection error: {}".format(err))
-            sys.exit(2)
-        print("create socket...")
-        msg = self.__auth()
-        sock.sendall(msg)
-        print("send message...")
+    # def send(self):
+    #     try:
+    #         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    #         sock.connect((self.host, self.port))
+    #     except socket.error:
+    #         sys.exit(2)
+    #     msg = self._auth()
+    #     client_log.info(f'Сообщение клиента {msg}')
+    #     sock.sendall(msg)
+    #
+    #     try:
+    #         msg = sock.recv(1024)
+    #     except socket.timeout:
+    #         print('Close connection by timeout.')
+    #
+    #     if not msg:
+    #         client_log.warning('No response')
+    #
+    #     sock.close()
 
-        try:
-            msg = sock.recv(1024)
-            print(json_unpack(msg))
-        except socket.timeout:
-            print("Close connection by timeout.")
-
-        if not msg:
-            print("No response")
-
-        sock.close()
-        print("client close...")
-
-    def __get_options(self, args, options_file):
+    @log
+    def _get_options(self, args, options_file):
         """
         Get server config
         :param args: Command line arguments
@@ -46,19 +59,21 @@ class ChatClient:
         :return: dict
         """
         options = chat_config.get_json_options(options_file)
-        cl_options = chat_config.get_cmd_options(args, "a:p:")
+        cl_options = chat_config.get_cmd_options(args, 'a:p:')
         for opt in cl_options:
-            if opt[0] == "-a":
+            if opt[0] == '-a':
                 options['DEFAULT']['HOST'] = opt[1]
-            elif opt[0] == "-p":
+            elif opt[0] == '-p':
                 options['DEFAULT']['PORT'] = opt[1]
+        client_log.info(f'Аргументы для запуска {options}')
         return options
 
-    def __get_user(self):
-        return User("User", "Password")
+    def _get_user(self):
+        return User('User', 'Password')
 
-    def __auth(self):
-        user = self.__get_user()
+    @log
+    def _auth(self):
+        user = self._get_user()
         time = datetime.datetime.now()
         msg = {
             "action": "authenticate",
@@ -68,4 +83,5 @@ class ChatClient:
                 "password": user.password,
             },
         }
+        client_log.info(msg)
         return json_pack(msg)
