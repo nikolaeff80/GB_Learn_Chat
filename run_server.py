@@ -11,7 +11,7 @@ server = ChatServer(sys.argv, config)
 if __name__ == "__main__":
     try:
         server_log.info('Server run...')
-        server.mainloop()
+        server.main()
     except KeyboardInterrupt as e:
         server_log.info('Server shutdown...')
         server.shutdown()

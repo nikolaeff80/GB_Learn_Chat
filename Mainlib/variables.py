@@ -1,0 +1,13 @@
+# for JIM message
+ACTION = 'action'
+TIME = 'time'
+USER = 'user'
+ACCOUNT_NAME = 'account_name'
+SENDER = 'from'
+DESTINATION = 'to'
+PRESENCE = 'presence'
+RESPONSE = 'response'
+ERROR = 'error'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'mess_text'
+EXIT = 'exit'

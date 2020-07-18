@@ -1,108 +1,12 @@
-2020-07-09 15:34:15,423 - DEBUG - server_log - РђСЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё, РµСЃР»Рё РЅРµ Р·Р°РґР°РЅС‹, С‚Рѕ default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
+2020-07-17 12:52:24,792 - DEBUG - server_log - РђСЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё, РµСЃР»Рё РЅРµ Р·Р°РґР°РЅС‹, С‚Рѕ default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
 Аргументы командной строки, если не заданы, то default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
-2020-07-09 15:34:15,436 - INFO - server_log - Server run...
+2020-07-17 12:52:24,792 - INFO - server_log - Server run...
 Server run...
-2020-07-09 15:34:48,517 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Hello!'}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Hello!'}
-2020-07-09 15:34:48,519 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Hello!'}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Hello!'}
-2020-07-09 15:34:58,621 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Not hello!'}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Not hello!'}
-2020-07-09 15:34:58,621 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Not hello!'}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: 'Not hello!'}
-2020-07-09 15:35:08,208 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:08,208 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:08,713 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:08,713 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:09,215 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:09,215 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:09,720 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:09,720 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:10,227 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:10,227 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:10,735 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:10,735 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:11,238 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:11,238 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:11,738 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:11,738 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:12,242 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:12,242 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:12,748 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:12,748 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:13,251 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:13,251 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:13,766 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:13,766 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:14,270 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:14,270 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:14,776 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:14,776 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:15,283 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:15,283 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:15,786 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:15,786 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:16,288 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:16,288 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:16,791 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:16,791 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:17,294 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:17,294 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:17,799 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:17,799 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:18,301 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:18,301 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:18,810 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:18,810 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:19,312 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:19,312 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:19,818 - INFO - server_log - РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Ответ сервера: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-2020-07-09 15:35:19,818 - INFO - server_log - Р—Р°РїСЂРѕСЃС‹ РєР»РёРµРЅС‚РѕРІ: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
-Запросы клиентов: {<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63668)>: ''}
+2020-07-17 19:14:39,523 - DEBUG - server_log - РђСЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё, РµСЃР»Рё РЅРµ Р·Р°РґР°РЅС‹, С‚Рѕ default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
+Аргументы командной строки, если не заданы, то default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
+2020-07-17 19:14:39,527 - INFO - server_log - Server run...
+Server run...
+2020-07-17 19:16:54,303 - DEBUG - server_log - РђСЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё, РµСЃР»Рё РЅРµ Р·Р°РґР°РЅС‹, С‚Рѕ default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
+Аргументы командной строки, если не заданы, то default: {'DEFAULT': {'HOST': '127.0.0.1', 'PORT': 7777}}
+2020-07-17 19:16:54,304 - INFO - server_log - Server run...
+Server run...
