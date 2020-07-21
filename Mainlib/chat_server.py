@@ -105,6 +105,7 @@ class ChatServer:
                     pass
                 write_responses(responses, w, clients)  # Выполним отправку ответов клиентам
 
+    @log
     def run(self):
         """
         Run server

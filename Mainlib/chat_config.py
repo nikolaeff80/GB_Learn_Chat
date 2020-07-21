@@ -25,10 +25,9 @@ def get_cmd_options(args, short_opts):
     :param short_opts:
     :return:
     """
-    return ''
-    # try:
-    #     opts, _ = getopt.getopt(args[1:], short_opts)
-    # except getopt.GetoptError as err:
-    #     print("Invalid argument value with error: {}".format(err))
-    #     sys.exit(2)
-    # return opts
+    try:
+        opts, _ = getopt.getopt(args[1:], short_opts)
+    except getopt.GetoptError as err:
+        print("Invalid argument value with error: {}".format(err))
+        sys.exit(2)
+    return opts

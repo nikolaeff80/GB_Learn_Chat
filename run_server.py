@@ -1,12 +1,19 @@
+import logging
+import os
 import sys
 
-from Log.server_log_config import server_log
 from Mainlib.chat_server import ChatServer
 
+server_log = logging.getLogger('server-log')
 
+PATH = os.path.dirname(os.path.abspath(__file__))
+print(PATH)
+PATH = os.path.join(PATH, 'Mainlib\config_server.json')
+print(PATH)
+
+print((os.getcwd()))
 config = 'config_server.json'
 server = ChatServer(sys.argv, config)
-
 
 if __name__ == "__main__":
     try:
