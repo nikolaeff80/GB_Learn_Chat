@@ -1,3 +1,0 @@
-2020-07-17 12:42:06,637 - INFO - client_log - Список клиентов: [<subprocess.Popen object at 0x0000019B41156400>]
-2020-07-17 12:42:06,639 - INFO - client_log - Список клиентов: [<subprocess.Popen object at 0x0000019B41156400>, <subprocess.Popen object at 0x0000019B41136640>]
-2020-07-17 12:42:06,640 - INFO - client_log - Список клиентов: [<subprocess.Popen object at 0x0000019B41156400>, <subprocess.Popen object at 0x0000019B41136640>, <subprocess.Popen object at 0x0000019B41136100>]

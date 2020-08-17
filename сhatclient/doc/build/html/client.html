@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Client module documentation &#8212; Client for GB Learn Chat 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="2. Mainlib module" href="Mainlib.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="client-module-documentation">
+<h1><span class="section-number">3. </span>Client module documentation<a class="headerlink" href="#client-module-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Клиентское приложение для обмена сообщениями. Поддерживает
+отправку сообщений пользователям которые находятся в сети, сообщения шифруются
+с помощью алгоритма RSA с длинной ключа 2048 bit.</p>
+<p>Поддерживает аргументы коммандной строки:</p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">chat_client.py</span> <span class="pre">{имя</span> <span class="pre">сервера}</span> <span class="pre">{порт}</span> <span class="pre">-n</span> <span class="pre">или</span> <span class="pre">--name</span> <span class="pre">{имя</span> <span class="pre">пользователя}</span> <span class="pre">-p</span> <span class="pre">или</span> <span class="pre">-password</span> <span class="pre">{пароль}</span></code></p>
+<ol class="arabic simple">
+<li><p>{имя сервера} - адрес сервера сообщений.</p></li>
+<li><p>{порт} - порт по которому принимаются подключения</p></li>
+<li><p>-n или –name - имя пользователя с которым произойдёт вход в систему.</p></li>
+<li><p>-p или –password - пароль пользователя.</p></li>
+</ol>
+<p>Все опции командной строки являются необязательными, но имя пользователя и пароль необходимо использовать в паре.</p>
+<p>Примеры использования:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">chat_client.py</span></code></p></li>
+</ul>
+<p><em>Запуск приложения с параметрами по умолчанию.</em></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">chat_client.py</span> <span class="pre">ip_address</span> <span class="pre">some_port</span></code></p></li>
+</ul>
+<p><em>Запуск приложения с указанием подключаться к серверу по адресу ip_address:port</em></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">chat_client.py</span> <span class="pre">-n</span> <span class="pre">test1</span> <span class="pre">-p</span> <span class="pre">123</span></code></p></li>
+</ul>
+<p><em>Запуск приложения с пользователем test1 и паролем 123</em></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">chat_client.py</span> <span class="pre">ip_address</span> <span class="pre">some_port</span> <span class="pre">-n</span> <span class="pre">test1</span> <span class="pre">-p</span> <span class="pre">123</span></code></p></li>
+</ul>
+<p><em>Запуск приложения с пользователем test1 и паролем 123 и указанием подключаться к серверу по адресу ip_address:port</em></p>
+<div class="section" id="client-py">
+<h2><span class="section-number">3.1. </span>client.py<a class="headerlink" href="#client-py" title="Permalink to this headline">¶</a></h2>
+<p>Parser for command line arguments, returns a tuple of 4 elements
+server address, port, username, password.</p>
+<p>Запускаемый модуль,содержит парсер аргументов командной строки и функционал инициализации приложения.</p>
+<dl class="simple">
+<dt>client. <strong>arg_parser</strong> ()</dt><dd><p>Парсер аргументов командной строки, возвращает кортеж из 4 элементов:</p>
+<ul class="simple">
+<li><p>адрес сервера</p></li>
+<li><p>порт</p></li>
+<li><p>имя пользователя</p></li>
+<li><p>пароль</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="add-contact-window-py">
+<h2><span class="section-number">3.2. </span>add_contact_window.py<a class="headerlink" href="#add-contact-window-py" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="client-database-py">
+<h2><span class="section-number">3.3. </span>Client_DataBase.py<a class="headerlink" href="#client-database-py" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="client-main-window-py">
+<h2><span class="section-number">3.4. </span>client_main_window.py<a class="headerlink" href="#client-main-window-py" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="del-contact-window-py">
+<h2><span class="section-number">3.5. </span>del_contact_window.py<a class="headerlink" href="#del-contact-window-py" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="client.del_contact_window.DelContactDialog">
+<em class="property">class </em><code class="sig-prename descclassname">client.del_contact_window.</code><code class="sig-name descname">DelContactDialog</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">database</span></em><span class="sig-paren">)</span><a class="headerlink" href="#client.del_contact_window.DelContactDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dialogue for deleting a contact. Maintains the current contact list,
+does not have handlers for actions.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="start-dialog-window-py">
+<h2><span class="section-number">3.6. </span>start_dialog_window.py<a class="headerlink" href="#start-dialog-window-py" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="client.start_dialog_window.UserNameDialog">
+<em class="property">class </em><code class="sig-prename descclassname">client.start_dialog_window.</code><code class="sig-name descname">UserNameDialog</code><a class="headerlink" href="#client.start_dialog_window.UserNameDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that implements a start dialog with a login and password request
+user.</p>
+<dl class="py method">
+<dt id="client.start_dialog_window.UserNameDialog.click">
+<code class="sig-name descname">click</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.start_dialog_window.UserNameDialog.click" title="Permalink to this definition">¶</a></dt>
+<dd><p>OK button handler method
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="transport-py">
+<h2><span class="section-number">3.7. </span>transport.py<a class="headerlink" href="#transport-py" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Client for GB Learn Chat</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Log.html">1. Log package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mainlib.html">2. Mainlib module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Client module documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#client-py">3.1. client.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-contact-window-py">3.2. add_contact_window.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#client-database-py">3.3. Client_DataBase.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#client-main-window-py">3.4. client_main_window.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#del-contact-window-py">3.5. del_contact_window.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-dialog-window-py">3.6. start_dialog_window.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transport-py">3.7. transport.py</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Mainlib.html" title="previous chapter"><span class="section-number">2. </span>Mainlib module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Nikolay Nikolaev by GB.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/client.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

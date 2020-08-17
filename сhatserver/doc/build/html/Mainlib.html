@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Mainlib module &#8212; документация Learn GB Message Chat server beta 0.1.2</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="3. Server module" href="server.html" />
+    <link rel="prev" title="1. Log package" href="Log.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="mainlib-module">
+<h1><span class="section-number">2. </span>Mainlib module<a class="headerlink" href="#mainlib-module" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Пакет общих утилит, использующихся в разных модулях проекта.</p>
+<div class="section" id="descriptors-py">
+<h2><span class="section-number">2.1. </span>Скрипт descriptors.py<a class="headerlink" href="#descriptors-py" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Mainlib.descriptors <strong>Port</strong></p>
+<blockquote>
+<div><p>For port number descriptor: Validating the port.</p>
+</div></blockquote>
+<p>Mainlib.descriptors <strong>IPAddress</strong></p>
+<blockquote>
+<div><p>The descriptor for the IP address: Validating the IP address</p>
+</div></blockquote>
+</div>
+<div class="section" id="exception-py">
+<h2><span class="section-number">2.2. </span>Скрипт exception.py<a class="headerlink" href="#exception-py" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py class">
+<dt id="Mainlib.exception.IncorrectDataRecivedError">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.exception.</code><code class="sig-name descname">IncorrectDataRecivedError</code><a class="headerlink" href="#Mainlib.exception.IncorrectDataRecivedError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Exception - Invalid data received from socket</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="Mainlib.exception.ServerError">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.exception.</code><code class="sig-name descname">ServerError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Mainlib.exception.ServerError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Exception - Server Error</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="Mainlib.exception.NonDictInputError">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.exception.</code><code class="sig-name descname">NonDictInputError</code><a class="headerlink" href="#Mainlib.exception.NonDictInputError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Exception - is the function argument is not a dictionary.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="Mainlib.exception.ReqFieldMissingError">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.exception.</code><code class="sig-name descname">ReqFieldMissingError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">missing_field</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Mainlib.exception.ReqFieldMissingError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Error - a required field is missing in the accepted dictionary</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="Mainlib.exception.DataBaseInteractiveError">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.exception.</code><code class="sig-name descname">DataBaseInteractiveError</code><a class="headerlink" href="#Mainlib.exception.DataBaseInteractiveError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Database communication error</p>
+</dd></dl>
+
+</div>
+<div class="section" id="verifier-py">
+<h2><span class="section-number">2.3. </span>Скрипт verifier.py<a class="headerlink" href="#verifier-py" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py class">
+<dt id="Mainlib.verifier.ServerVerifier">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.verifier.</code><code class="sig-name descname">ServerVerifier</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clsname</span></em>, <em class="sig-param"><span class="n">bases</span></em>, <em class="sig-param"><span class="n">clsdict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Mainlib.verifier.ServerVerifier" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Metaclass for checking server compliance</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="Mainlib.verifier.ClientVerifier">
+<em class="property">class </em><code class="sig-prename descclassname">Mainlib.verifier.</code><code class="sig-name descname">ClientVerifier</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clsname</span></em>, <em class="sig-param"><span class="n">bases</span></em>, <em class="sig-param"><span class="n">clsdict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Mainlib.verifier.ClientVerifier" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Metaclass for validating clients</p>
+</dd></dl>
+
+</div>
+<div class="section" id="jim-py">
+<h2><span class="section-number">2.4. </span>Скрипт JIM.py<a class="headerlink" href="#jim-py" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Mainlib.JIM <strong>get_message</strong> (client)</p>
+<blockquote>
+<div><p>The utility for receiving and decoding a message accepts bytes and gives out a dictionary,
+if something else is received it gives a value error</p>
+</div></blockquote>
+<p>Mainlib.JIM <strong>send_message</strong> (sock, message)</p>
+<blockquote>
+<div><p>Message encoding and sending utility,
+takes a dictionary and sends it</p>
+</div></blockquote>
+</div>
+<div class="section" id="variables-py">
+<h2><span class="section-number">2.5. </span>Скрипт variables.py<a class="headerlink" href="#variables-py" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Содержит разные глобальные переменные проекта.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Learn GB Message Chat server</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Log.html">1. Log package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Mainlib module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#descriptors-py">2.1. Скрипт descriptors.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exception-py">2.2. Скрипт exception.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verifier-py">2.3. Скрипт verifier.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jim-py">2.4. Скрипт JIM.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-py">2.5. Скрипт variables.py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">3. Server module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Log.html" title="предыдущая глава"><span class="section-number">1. </span>Log package</a></li>
+      <li>Next: <a href="server.html" title="следующая глава"><span class="section-number">3. </span>Server module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Nikolay Nikolaev.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Mainlib.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
