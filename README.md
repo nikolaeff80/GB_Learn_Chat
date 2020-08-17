@@ -1,5 +1,8 @@
 # GB_Learn_Chat
-Network chat development in the learning process in Geek University Python-dev
+Network chat development in the learning process in Geek University Python-dev.
+
+Used by PyQt, cryptodomex
+
 
 LAUNCHER.PY
 
@@ -15,9 +18,9 @@ k - Запустить клиенты
 
 Будет выведен запрос на количество тестовых клиентов для запуска.
 
-Клиенты будут запущены с именами вида test1 - testX и паролями 123
+Клиенты будут запущены с именами вида test1 - testX и паролями 123456
 
-Тестовых пользователей необходимо предварительно, вручную зарегистрировать на сервере с паролем 123.
+Тестовых пользователей необходимо предварительно, вручную зарегистрировать на сервере с паролем 123456.
 
 Если клиенты запускаются впервые, время запуска может быть достаточно продолжительным из-за генерации новых RSA ключей.
 
@@ -57,11 +60,11 @@ python client.py ip_address some_port
 
 Запуск приложения с указанием подключаться к серверу по адресу ip_address:port
 
-python -n test1 -p 123
+python -n test1 -p 123456
 
-Запуск приложения с пользователем test1 и паролем 123
+Запуск приложения с пользователем test1 и паролем 123456
 
-python client.py ip_address some_port -n test1 -p 123
+python client.py ip_address some_port -n test1 -p 123456
 
 Запуск приложения с пользователем test1 и паролем 123456 и указанием подключаться к серверу по адресу ip_address:port
 
