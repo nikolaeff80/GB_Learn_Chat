@@ -1,0 +1,274 @@
+2020-08-17 12:26:55,920 DEBUG client.py Args loaded
+2020-08-17 12:27:04,910 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2020-08-17 12:27:04,910 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:27:05,055 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:27:05,076 INFO transport.py Попытка подключения №1
+2020-08-17 12:27:05,076 DEBUG transport.py Connection established.
+2020-08-17 12:27:05,076 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:27:05,107 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:27:05,107 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597656425.1075034, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI3128PJajlpnGJ+BLYg\nLxLlPvPwxnWqNfNBXS0VpNkTSrkgtZak99nvfu/undYffFmKlm4PbSl7CexfyO/N\nBUP6X1AcN+vZ7qZ24OZ6ZqlbQnoKhI2N8Vl7Dw85A/3GJqO4l5t1c/0TwXq444u/\ncMrKF4CZPaitWYOHLQxdGUINZrKUZUYhLXSabZVgC6JkLI66rVJU81inlyLOA+Je\nHX0O5rVHi8xwPKSc8zQr9onLUESHRoupwRQ1x8JlXt0TUvtJI3Yt4kjNFdpTs7hz\n6swBVYxJHDBsBQgebOg1UwTtAIHC/m+GC5khGUm+HsfzczzYU5L42gMts95R8TuK\nBQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:27:05,585 DEBUG transport.py Server response = {'response': 511, 'bin': '03bf64896d6c4f83a9a0c78a67264e9faf6b68c2bca4d69913f07c56d360564bdc118ef5e53fa03a8f2b9858304c8d0ac55573ded5510c0ee6767236b7941c19'}.
+2020-08-17 12:27:05,586 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:27:05,586 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:27:07,614 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:33:58,567 DEBUG client.py Args loaded
+2020-08-17 12:34:09,086 DEBUG client.py Using USERNAME = test2, PASSWD = 123456.
+2020-08-17 12:34:09,086 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:34:11,792 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:34:11,816 INFO transport.py Попытка подключения №1
+2020-08-17 12:34:11,817 DEBUG transport.py Connection established.
+2020-08-17 12:34:11,817 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:34:11,848 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2020-08-17 12:34:11,849 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597656851.8480039, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7+flxfa5Sr5X7BEq2hi\nQ3QCSee1mlYidBRfh33KtIqbT7az0XsChOZ+Za5bcsePDhDuL/QkN//uaSy689vq\n00Hgm7Cwfmvn1gJwd4J/Ki58tcBE1tEAmDjOY1p0Njr/US8UcclPf2p3EjFIGxHm\n9V6VLNi7i/sKp7ZPPKJfbp59JYITbyYYs1yU+m2s8FuwmGCp+RNmIL0zgPCRKtuh\nzB52hdAj9lBKYVYSnnBE8pvTwBIVl6wFoeeRCsKSC6p4PdZVHUlrQyjj9bByC064\nJZazCalnjwDWsUfMOkktTYpMHjDyIGByGXo4hbFzqaooyKfNGqUyx/2zJ02H87e6\ncQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:34:12,338 DEBUG transport.py Server response = {'response': 511, 'bin': 'c41c51913647711b739dd4f5805357190cf5d83e7d22061925d04366c806c222061901744104a8eabad0d81a973d61ae16e795243eacf1cf3a387b23907154e0'}.
+2020-08-17 12:34:12,338 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:34:12,339 DEBUG transport.py Запрос списка известных пользователей test2
+2020-08-17 12:34:12,858 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2020-08-17 12:34:12,858 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1597656852.858659, 'user': 'test2'}
+2020-08-17 12:34:13,358 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2020-08-17 12:34:13,358 DEBUG client.py Transport ready.
+2020-08-17 12:34:13,359 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2020-08-17 12:34:25,197 DEBUG transport.py Создание контакта test3
+2020-08-17 12:34:25,508 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:34:25,514 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x06AAF658>
+2020-08-17 12:34:30,097 DEBUG transport.py Создание контакта test1
+2020-08-17 12:34:30,573 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:34:30,578 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0453AFA0>
+2020-08-17 12:34:37,144 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Запрос некорректен.'}
+2020-08-17 12:38:24,540 DEBUG client.py Args loaded
+2020-08-17 12:38:39,875 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2020-08-17 12:38:39,875 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:38:40,020 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:38:40,034 INFO transport.py Попытка подключения №1
+2020-08-17 12:38:40,035 DEBUG transport.py Connection established.
+2020-08-17 12:38:40,035 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:38:40,066 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:38:40,066 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597657120.0665786, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI3128PJajlpnGJ+BLYg\nLxLlPvPwxnWqNfNBXS0VpNkTSrkgtZak99nvfu/undYffFmKlm4PbSl7CexfyO/N\nBUP6X1AcN+vZ7qZ24OZ6ZqlbQnoKhI2N8Vl7Dw85A/3GJqO4l5t1c/0TwXq444u/\ncMrKF4CZPaitWYOHLQxdGUINZrKUZUYhLXSabZVgC6JkLI66rVJU81inlyLOA+Je\nHX0O5rVHi8xwPKSc8zQr9onLUESHRoupwRQ1x8JlXt0TUvtJI3Yt4kjNFdpTs7hz\n6swBVYxJHDBsBQgebOg1UwTtAIHC/m+GC5khGUm+HsfzczzYU5L42gMts95R8TuK\nBQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:38:40,551 DEBUG transport.py Server response = {'response': 511, 'bin': '2f079ff5c94e5c55ea4add9ebd90e4a50d655c7dc5120c33b89f1eedc729a5bf25e2eaeb502047bcbcd9fd67c5264b4c32a2fff0d0ed57a1b16d91e6d6ed773b'}.
+2020-08-17 12:38:40,552 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:38:40,552 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:38:42,399 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:38:47,477 DEBUG client.py Args loaded
+2020-08-17 12:38:57,557 DEBUG client.py Using USERNAME = test2, PASSWD = 123456.
+2020-08-17 12:38:57,558 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:38:57,702 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:38:57,721 INFO transport.py Попытка подключения №1
+2020-08-17 12:39:00,736 INFO transport.py Попытка подключения №2
+2020-08-17 12:39:03,755 INFO transport.py Попытка подключения №3
+2020-08-17 12:39:06,784 INFO transport.py Попытка подключения №4
+2020-08-17 12:39:09,818 INFO transport.py Попытка подключения №5
+2020-08-17 12:39:12,835 CRITICAL transport.py Не удалось установить соединение с сервером
+2020-08-17 12:40:06,882 DEBUG client.py Args loaded
+2020-08-17 12:40:16,915 DEBUG client.py Using USERNAME = test2, PASSWD = 123456.
+2020-08-17 12:40:16,915 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:40:17,058 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:40:17,078 INFO transport.py Попытка подключения №1
+2020-08-17 12:40:17,078 DEBUG transport.py Connection established.
+2020-08-17 12:40:17,078 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:40:17,108 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2020-08-17 12:40:17,109 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597657217.1098218, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7+flxfa5Sr5X7BEq2hi\nQ3QCSee1mlYidBRfh33KtIqbT7az0XsChOZ+Za5bcsePDhDuL/QkN//uaSy689vq\n00Hgm7Cwfmvn1gJwd4J/Ki58tcBE1tEAmDjOY1p0Njr/US8UcclPf2p3EjFIGxHm\n9V6VLNi7i/sKp7ZPPKJfbp59JYITbyYYs1yU+m2s8FuwmGCp+RNmIL0zgPCRKtuh\nzB52hdAj9lBKYVYSnnBE8pvTwBIVl6wFoeeRCsKSC6p4PdZVHUlrQyjj9bByC064\nJZazCalnjwDWsUfMOkktTYpMHjDyIGByGXo4hbFzqaooyKfNGqUyx/2zJ02H87e6\ncQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:40:17,589 DEBUG transport.py Server response = {'response': 511, 'bin': '74ba25d022492a9c47d3a8d9470ae36d51c475c001e03cc0cd1567265fab84b2ecffc628409126984a44dc4763250c7fd4a980cad0576ff9b1aa08578732f340'}.
+2020-08-17 12:40:17,589 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:40:17,589 DEBUG transport.py Запрос списка известных пользователей test2
+2020-08-17 12:40:19,265 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:41:49,825 DEBUG client.py Args loaded
+2020-08-17 12:41:58,578 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2020-08-17 12:41:58,578 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:41:58,722 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:41:58,738 INFO transport.py Попытка подключения №1
+2020-08-17 12:41:58,738 DEBUG transport.py Connection established.
+2020-08-17 12:41:58,738 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:41:58,768 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:41:58,769 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597657318.7699015, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI3128PJajlpnGJ+BLYg\nLxLlPvPwxnWqNfNBXS0VpNkTSrkgtZak99nvfu/undYffFmKlm4PbSl7CexfyO/N\nBUP6X1AcN+vZ7qZ24OZ6ZqlbQnoKhI2N8Vl7Dw85A/3GJqO4l5t1c/0TwXq444u/\ncMrKF4CZPaitWYOHLQxdGUINZrKUZUYhLXSabZVgC6JkLI66rVJU81inlyLOA+Je\nHX0O5rVHi8xwPKSc8zQr9onLUESHRoupwRQ1x8JlXt0TUvtJI3Yt4kjNFdpTs7hz\n6swBVYxJHDBsBQgebOg1UwTtAIHC/m+GC5khGUm+HsfzczzYU5L42gMts95R8TuK\nBQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:41:59,253 DEBUG transport.py Server response = {'response': 511, 'bin': 'b429030e4349803764dc89dc128d5a25d01365e5d4b53d94f727317eda750ca18d8277d29a0b71889f80e1b8c10ac3e46d3ed1289e964cab7a14a46fb3b1dfc7'}.
+2020-08-17 12:41:59,254 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:41:59,254 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:41:59,781 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2020-08-17 12:41:59,781 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1597657319.7813165, 'user': 'test1'}
+2020-08-17 12:42:00,280 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2020-08-17 12:42:00,280 DEBUG client.py Transport ready.
+2020-08-17 12:42:00,281 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2020-08-17 12:42:10,813 DEBUG transport.py Создание контакта test3
+2020-08-17 12:42:10,904 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:42:10,907 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0726C610>
+2020-08-17 12:42:15,254 DEBUG transport.py Создание контакта test2
+2020-08-17 12:42:15,467 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:42:15,471 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0726CF10>
+2020-08-17 12:42:17,720 DEBUG transport.py Запрос публичного ключа для test3
+2020-08-17 12:42:17,987 ERROR transport.py Не удалось получить ключ собеседникаtest3.
+2020-08-17 12:42:17,987 DEBUG client_main_window.py Загружен открытый ключ для test3
+2020-08-17 12:42:21,742 DEBUG transport.py Запрос публичного ключа для test2
+2020-08-17 12:42:22,022 ERROR transport.py Не удалось получить ключ собеседникаtest2.
+2020-08-17 12:42:22,022 DEBUG client_main_window.py Загружен открытый ключ для test2
+2020-08-17 12:45:20,259 DEBUG transport.py Транспорт завершает работу.
+2020-08-17 12:46:24,527 DEBUG client.py Args loaded
+2020-08-17 12:46:24,530 DEBUG client.py Args loaded
+2020-08-17 12:46:24,774 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:46:24,776 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:46:24,918 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:46:24,918 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:46:24,934 INFO transport.py Попытка подключения №1
+2020-08-17 12:46:24,934 INFO transport.py Попытка подключения №1
+2020-08-17 12:46:24,934 DEBUG transport.py Connection established.
+2020-08-17 12:46:24,934 DEBUG transport.py Connection established.
+2020-08-17 12:46:24,934 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:46:24,934 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:46:24,965 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:46:24,965 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2020-08-17 12:46:24,965 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597657584.965719, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI3128PJajlpnGJ+BLYg\nLxLlPvPwxnWqNfNBXS0VpNkTSrkgtZak99nvfu/undYffFmKlm4PbSl7CexfyO/N\nBUP6X1AcN+vZ7qZ24OZ6ZqlbQnoKhI2N8Vl7Dw85A/3GJqO4l5t1c/0TwXq444u/\ncMrKF4CZPaitWYOHLQxdGUINZrKUZUYhLXSabZVgC6JkLI66rVJU81inlyLOA+Je\nHX0O5rVHi8xwPKSc8zQr9onLUESHRoupwRQ1x8JlXt0TUvtJI3Yt4kjNFdpTs7hz\n6swBVYxJHDBsBQgebOg1UwTtAIHC/m+GC5khGUm+HsfzczzYU5L42gMts95R8TuK\nBQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:46:24,966 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597657584.96672, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7+flxfa5Sr5X7BEq2hi\nQ3QCSee1mlYidBRfh33KtIqbT7az0XsChOZ+Za5bcsePDhDuL/QkN//uaSy689vq\n00Hgm7Cwfmvn1gJwd4J/Ki58tcBE1tEAmDjOY1p0Njr/US8UcclPf2p3EjFIGxHm\n9V6VLNi7i/sKp7ZPPKJfbp59JYITbyYYs1yU+m2s8FuwmGCp+RNmIL0zgPCRKtuh\nzB52hdAj9lBKYVYSnnBE8pvTwBIVl6wFoeeRCsKSC6p4PdZVHUlrQyjj9bByC064\nJZazCalnjwDWsUfMOkktTYpMHjDyIGByGXo4hbFzqaooyKfNGqUyx/2zJ02H87e6\ncQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:46:25,447 DEBUG transport.py Server response = {'response': 511, 'bin': '9b5f422946271488fe63d686a1ce365fda2bddace469febca94046123e840096d811d8c986ad8ef6256df6a3e3c572912c00f31897c23725d22c7017eb0d120f'}.
+2020-08-17 12:46:25,447 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:46:25,448 DEBUG transport.py Запрос списка известных пользователей test2
+2020-08-17 12:46:25,459 DEBUG transport.py Server response = {'response': 511, 'bin': 'f1b9cee23cab2f6ec5d511cf02802b542cfebf029015c2b1e946856575dffa4bcf2dbbf5d5dd30fc8d8819bb0d26e5bb2e63df92964957a03d709186d3d00f96'}.
+2020-08-17 12:46:25,459 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:46:25,459 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:46:27,428 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:46:27,428 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:50:14,277 DEBUG client.py Args loaded
+2020-08-17 12:50:14,279 DEBUG client.py Args loaded
+2020-08-17 12:50:14,530 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:50:14,532 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:50:22,780 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:50:22,799 INFO transport.py Попытка подключения №1
+2020-08-17 12:50:22,800 DEBUG transport.py Connection established.
+2020-08-17 12:50:22,800 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:50:22,830 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:50:22,831 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597657822.8313482, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlTeOPYpkB+RdhQv3E97L\nWWa1K1rMlRuq1z5/wihDVarU8q73BcAvt5INbxJUOOCybTHOKrbk1XO6TFqFIJHP\nPzUogubPjuKN12zMOYvUckyxQt5VUX5BouHH80VYztQweawddI1SndIEaSGFPEgp\nV5i1tlqeDUzbAv9r8lNrQy7Tg63cnqPV7swxAez6iUHHfayBD7by+a5SGFYZ4f6g\n7jCc5aWlEijyCnWS0G0Nn/XsglXZDNpXHiSSnG1IplehQ09N31Xg1rS8syoZ9IEt\nkA+BXZ8rQ6b20XYMrVovyk8aDErjzrX+9y0V5mQpd9u/gKcL7rpQFo3qxLa1Vki1\ntwIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:50:23,304 DEBUG transport.py Server response = {'response': 511, 'bin': '630209faff2ed124c70436e9c70cec5306d57c6697a9116defa98f136135d6bf96791053fb770a16d84672320d69d1318de5a87e880fff834275c5b0bd2131d2'}.
+2020-08-17 12:50:23,304 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:50:23,304 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:50:24,577 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:50:33,697 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:50:33,716 INFO transport.py Попытка подключения №1
+2020-08-17 12:50:36,747 INFO transport.py Попытка подключения №2
+2020-08-17 12:50:39,771 INFO transport.py Попытка подключения №3
+2020-08-17 12:50:42,800 INFO transport.py Попытка подключения №4
+2020-08-17 12:50:45,825 INFO transport.py Попытка подключения №5
+2020-08-17 12:50:48,866 CRITICAL transport.py Не удалось установить соединение с сервером
+2020-08-17 12:56:42,115 DEBUG client.py Args loaded
+2020-08-17 12:56:42,119 DEBUG client.py Args loaded
+2020-08-17 12:56:42,365 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:56:42,368 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:56:42,511 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:56:42,513 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:56:42,529 INFO transport.py Попытка подключения №1
+2020-08-17 12:56:42,530 DEBUG transport.py Connection established.
+2020-08-17 12:56:42,530 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:56:42,531 INFO transport.py Попытка подключения №1
+2020-08-17 12:56:42,531 DEBUG transport.py Connection established.
+2020-08-17 12:56:42,531 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:56:42,561 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:56:42,561 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597658202.5613248, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlTeOPYpkB+RdhQv3E97L\nWWa1K1rMlRuq1z5/wihDVarU8q73BcAvt5INbxJUOOCybTHOKrbk1XO6TFqFIJHP\nPzUogubPjuKN12zMOYvUckyxQt5VUX5BouHH80VYztQweawddI1SndIEaSGFPEgp\nV5i1tlqeDUzbAv9r8lNrQy7Tg63cnqPV7swxAez6iUHHfayBD7by+a5SGFYZ4f6g\n7jCc5aWlEijyCnWS0G0Nn/XsglXZDNpXHiSSnG1IplehQ09N31Xg1rS8syoZ9IEt\nkA+BXZ8rQ6b20XYMrVovyk8aDErjzrX+9y0V5mQpd9u/gKcL7rpQFo3qxLa1Vki1\ntwIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:56:42,562 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2020-08-17 12:56:42,562 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597658202.562326, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAveuatJKfLuMD9QZeHrNn\nhjDUh3xpOYJtZ6Q6Q6YRjrpMhVZ5MVY/JUc9YWKWxfiBDVXVRk7NRu89iI68iaQD\nLlo+Yab/FpXgq6Nag7mdSp/vZA9vF53XwLazjQuoMcv0xUJw3QQVNSfjdsR/dVeZ\nAQaMpSqLOQ32FE0S3+9awd0bH+iF8eE4zXU+A987RzTS6VSwFKRJht8J2nv310Fi\nDQZaW+g6AACb73q8xBdkQYZg9RZRgS4V1ZTHxTSchkpnVs4o9Aa8zJu4T7ECA6xk\n8di4fTGrUTtrUlZeLzY0O3upKnE7COxhfUPlNWDTC8pqX/feSJgAdfDIFV/6oyBo\nkQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:56:43,043 DEBUG transport.py Server response = {'response': 511, 'bin': '3d57890043321bfb9c17d10d2f4e7000bab2f5b035c2a8ac38f56bc49514e9085671a064507c6908f91bdf5239b915cceeb95f3ba5c016d46b0f1596e78deecc'}.
+2020-08-17 12:56:43,044 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:56:43,044 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:56:44,577 CRITICAL transport.py Потеряно соединение с сервером.
+2020-08-17 12:56:44,577 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\PyProjects\Mess\chatclient\сhatclient\client\transport.py", line 127, in connection_init
+    ans = get_message(self.transport)
+  File "C:\PyProjects\Mess\chatclient\сhatclient\Log\Log_decorators.py", line 25, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\PyProjects\Mess\chatclient\сhatclient\Mainlib\JIM.py", line 22, in get_message
+    encoded_response = client.recv(10240)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2020-08-17 12:58:29,577 DEBUG client.py Args loaded
+2020-08-17 12:58:29,588 DEBUG client.py Args loaded
+2020-08-17 12:58:29,825 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 12:58:29,828 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2020-08-17 12:58:29,969 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:58:29,976 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 12:58:29,988 INFO transport.py Попытка подключения №1
+2020-08-17 12:58:29,989 DEBUG transport.py Connection established.
+2020-08-17 12:58:29,989 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:58:29,989 INFO transport.py Попытка подключения №1
+2020-08-17 12:58:29,990 DEBUG transport.py Connection established.
+2020-08-17 12:58:29,990 DEBUG transport.py Starting auth dialog.
+2020-08-17 12:58:30,020 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 12:58:30,020 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2020-08-17 12:58:30,021 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597658310.021701, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlTeOPYpkB+RdhQv3E97L\nWWa1K1rMlRuq1z5/wihDVarU8q73BcAvt5INbxJUOOCybTHOKrbk1XO6TFqFIJHP\nPzUogubPjuKN12zMOYvUckyxQt5VUX5BouHH80VYztQweawddI1SndIEaSGFPEgp\nV5i1tlqeDUzbAv9r8lNrQy7Tg63cnqPV7swxAez6iUHHfayBD7by+a5SGFYZ4f6g\n7jCc5aWlEijyCnWS0G0Nn/XsglXZDNpXHiSSnG1IplehQ09N31Xg1rS8syoZ9IEt\nkA+BXZ8rQ6b20XYMrVovyk8aDErjzrX+9y0V5mQpd9u/gKcL7rpQFo3qxLa1Vki1\ntwIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:58:30,021 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597658310.021701, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAveuatJKfLuMD9QZeHrNn\nhjDUh3xpOYJtZ6Q6Q6YRjrpMhVZ5MVY/JUc9YWKWxfiBDVXVRk7NRu89iI68iaQD\nLlo+Yab/FpXgq6Nag7mdSp/vZA9vF53XwLazjQuoMcv0xUJw3QQVNSfjdsR/dVeZ\nAQaMpSqLOQ32FE0S3+9awd0bH+iF8eE4zXU+A987RzTS6VSwFKRJht8J2nv310Fi\nDQZaW+g6AACb73q8xBdkQYZg9RZRgS4V1ZTHxTSchkpnVs4o9Aa8zJu4T7ECA6xk\n8di4fTGrUTtrUlZeLzY0O3upKnE7COxhfUPlNWDTC8pqX/feSJgAdfDIFV/6oyBo\nkQIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 12:58:30,503 DEBUG transport.py Server response = {'response': 511, 'bin': '793fc3b79c43497e99c0baaf1055450a89c725af173ae78597428a54d9c4725d7161fcff4d1f79146ed5b3465064a66e60cbf5a1128bcd0691516e9e594b31cc'}.
+2020-08-17 12:58:30,503 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:58:30,503 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 12:58:30,514 DEBUG transport.py Server response = {'response': 511, 'bin': 'e66157ba3668a80f308912a119a41907af3946a57873f5e557fdfb9494cdd51ecaf6e54f2b00af9c7b63519e98d3c1a8c2e6d94e4879d430d8dde12a3e28f7a3'}.
+2020-08-17 12:58:30,514 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:58:30,514 DEBUG transport.py Запрос списка известных пользователей test2
+2020-08-17 12:58:31,031 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2020-08-17 12:58:31,031 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1597658311.0310996, 'user': 'test1'}
+2020-08-17 12:58:31,031 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2020-08-17 12:58:31,031 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1597658311.0310996, 'user': 'test2'}
+2020-08-17 12:58:31,526 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2020-08-17 12:58:31,527 DEBUG client.py Transport ready.
+2020-08-17 12:58:31,527 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2020-08-17 12:58:31,528 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2020-08-17 12:58:31,528 DEBUG client.py Transport ready.
+2020-08-17 12:58:31,529 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2020-08-17 12:58:43,862 DEBUG transport.py Создание контакта test3
+2020-08-17 12:58:44,173 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:58:44,179 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x04A4D580>
+2020-08-17 12:58:48,713 DEBUG transport.py Создание контакта test2
+2020-08-17 12:58:48,730 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:58:48,733 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x04A4DE80>
+2020-08-17 12:58:55,760 DEBUG transport.py Создание контакта test3
+2020-08-17 12:58:55,809 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:58:55,812 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0659C5C8>
+2020-08-17 12:59:00,229 DEBUG transport.py Создание контакта test1
+2020-08-17 12:59:00,361 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:59:00,366 INFO client_main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0659CF10>
+2020-08-17 12:59:04,674 DEBUG transport.py Запрос публичного ключа для test2
+2020-08-17 12:59:04,898 DEBUG client_main_window.py Загружен открытый ключ для test2
+2020-08-17 12:59:14,324 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1597658354.3248987, 'mess_text': 'JaY73PXwL1A486HBzurWohAcMjdDJVeHFeWgWLS6U7Ae7/Cgp/3FU0q/GrJC1asRgroVHDbc+Mf1Tv9iQ+dtCIxPX4Skwq1BF1F7quJpnTSRxuhbagLSJXw0SO9nf6S4WHfso0//+B+iUX9dlAXgb4qmW8HuntqeFNXn59YCIcilItP9qivQheGXgDoMsUjuMUyIk8AZsmJrbvt5JupgsWmFhCwwDfPB+2OLQSGFfcQb+dfbLqlB/py5hxB1OdepqKzrV97M6OHqse1QeMXrkAf5wWFktDEeaJr0MzzO4ZI/uEP+FWuXNxx/vjf2m3VhjqpBg/0bvKtO9uwo41NzAA=='}
+2020-08-17 12:59:14,512 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:59:14,512 INFO transport.py Отправлено сообщение для пользователя test2
+2020-08-17 12:59:14,515 DEBUG client_main_window.py Отправлено сообщение для test2: Hi
+2020-08-17 12:59:14,896 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1597658354.3248987, 'mess_text': 'JaY73PXwL1A486HBzurWohAcMjdDJVeHFeWgWLS6U7Ae7/Cgp/3FU0q/GrJC1asRgroVHDbc+Mf1Tv9iQ+dtCIxPX4Skwq1BF1F7quJpnTSRxuhbagLSJXw0SO9nf6S4WHfso0//+B+iUX9dlAXgb4qmW8HuntqeFNXn59YCIcilItP9qivQheGXgDoMsUjuMUyIk8AZsmJrbvt5JupgsWmFhCwwDfPB+2OLQSGFfcQb+dfbLqlB/py5hxB1OdepqKzrV97M6OHqse1QeMXrkAf5wWFktDEeaJr0MzzO4ZI/uEP+FWuXNxx/vjf2m3VhjqpBg/0bvKtO9uwo41NzAA=='}
+2020-08-17 12:59:14,896 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1597658354.3248987, 'mess_text': 'JaY73PXwL1A486HBzurWohAcMjdDJVeHFeWgWLS6U7Ae7/Cgp/3FU0q/GrJC1asRgroVHDbc+Mf1Tv9iQ+dtCIxPX4Skwq1BF1F7quJpnTSRxuhbagLSJXw0SO9nf6S4WHfso0//+B+iUX9dlAXgb4qmW8HuntqeFNXn59YCIcilItP9qivQheGXgDoMsUjuMUyIk8AZsmJrbvt5JupgsWmFhCwwDfPB+2OLQSGFfcQb+dfbLqlB/py5hxB1OdepqKzrV97M6OHqse1QeMXrkAf5wWFktDEeaJr0MzzO4ZI/uEP+FWuXNxx/vjf2m3VhjqpBg/0bvKtO9uwo41NzAA=='}
+2020-08-17 12:59:14,896 DEBUG transport.py Получено сообщение от пользователя test1:JaY73PXwL1A486HBzurWohAcMjdDJVeHFeWgWLS6U7Ae7/Cgp/3FU0q/GrJC1asRgroVHDbc+Mf1Tv9iQ+dtCIxPX4Skwq1BF1F7quJpnTSRxuhbagLSJXw0SO9nf6S4WHfso0//+B+iUX9dlAXgb4qmW8HuntqeFNXn59YCIcilItP9qivQheGXgDoMsUjuMUyIk8AZsmJrbvt5JupgsWmFhCwwDfPB+2OLQSGFfcQb+dfbLqlB/py5hxB1OdepqKzrV97M6OHqse1QeMXrkAf5wWFktDEeaJr0MzzO4ZI/uEP+FWuXNxx/vjf2m3VhjqpBg/0bvKtO9uwo41NzAA==
+2020-08-17 12:59:16,611 DEBUG transport.py Запрос публичного ключа для test1
+2020-08-17 12:59:17,055 DEBUG client_main_window.py Загружен открытый ключ для test1
+2020-08-17 12:59:35,217 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1597658375.217019, 'mess_text': 'Br9k5JSduZvKvhBbTgZOB6oDgDWYL3mvTzBjmZ5ZPSrCTlMLr/RRhuErNwDHugmYJ6kC3PzCBQaNp9/0hyb+gKkAl5NIrl7Un8VU/E8JnsfFPM8FYiUuBdY+PnNR0/LzsBC/L/lvlFI68ICKmxNZvIxBy3+ngJ3OjLOC/974/hAKtduCjV1PQYrNBMyATLtH82/uJ3yGS6vrvatooXAEhph+KA/K+Km9dHFcCPkFG2A8kFaTVYoJb1TYWEYb/pMSsuGKccR6Ew7HmPbll8HwdcgtSb+l4IBYauUW/V4izfuQotluLaqY8+2u0OiS0wwoFFI5+zsOvEHe+KtbYMpHWw=='}
+2020-08-17 12:59:35,244 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:59:35,244 INFO transport.py Отправлено сообщение для пользователя test1
+2020-08-17 12:59:35,246 DEBUG client_main_window.py Отправлено сообщение для test1: Well done!
+2020-08-17 12:59:36,073 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1597658375.217019, 'mess_text': 'Br9k5JSduZvKvhBbTgZOB6oDgDWYL3mvTzBjmZ5ZPSrCTlMLr/RRhuErNwDHugmYJ6kC3PzCBQaNp9/0hyb+gKkAl5NIrl7Un8VU/E8JnsfFPM8FYiUuBdY+PnNR0/LzsBC/L/lvlFI68ICKmxNZvIxBy3+ngJ3OjLOC/974/hAKtduCjV1PQYrNBMyATLtH82/uJ3yGS6vrvatooXAEhph+KA/K+Km9dHFcCPkFG2A8kFaTVYoJb1TYWEYb/pMSsuGKccR6Ew7HmPbll8HwdcgtSb+l4IBYauUW/V4izfuQotluLaqY8+2u0OiS0wwoFFI5+zsOvEHe+KtbYMpHWw=='}
+2020-08-17 12:59:36,073 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1597658375.217019, 'mess_text': 'Br9k5JSduZvKvhBbTgZOB6oDgDWYL3mvTzBjmZ5ZPSrCTlMLr/RRhuErNwDHugmYJ6kC3PzCBQaNp9/0hyb+gKkAl5NIrl7Un8VU/E8JnsfFPM8FYiUuBdY+PnNR0/LzsBC/L/lvlFI68ICKmxNZvIxBy3+ngJ3OjLOC/974/hAKtduCjV1PQYrNBMyATLtH82/uJ3yGS6vrvatooXAEhph+KA/K+Km9dHFcCPkFG2A8kFaTVYoJb1TYWEYb/pMSsuGKccR6Ew7HmPbll8HwdcgtSb+l4IBYauUW/V4izfuQotluLaqY8+2u0OiS0wwoFFI5+zsOvEHe+KtbYMpHWw=='}
+2020-08-17 12:59:36,073 DEBUG transport.py Получено сообщение от пользователя test2:Br9k5JSduZvKvhBbTgZOB6oDgDWYL3mvTzBjmZ5ZPSrCTlMLr/RRhuErNwDHugmYJ6kC3PzCBQaNp9/0hyb+gKkAl5NIrl7Un8VU/E8JnsfFPM8FYiUuBdY+PnNR0/LzsBC/L/lvlFI68ICKmxNZvIxBy3+ngJ3OjLOC/974/hAKtduCjV1PQYrNBMyATLtH82/uJ3yGS6vrvatooXAEhph+KA/K+Km9dHFcCPkFG2A8kFaTVYoJb1TYWEYb/pMSsuGKccR6Ew7HmPbll8HwdcgtSb+l4IBYauUW/V4izfuQotluLaqY8+2u0OiS0wwoFFI5+zsOvEHe+KtbYMpHWw==
+2020-08-17 12:59:48,856 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1597658388.8561995, 'mess_text': 'a1Y0YqVfTOSopU9w4A97hTkrZwNPWfJkORE/PEyV/fhb9q/Pvah/SOqNFTVGHVu/aDFAV71wPbclagY8cPnvLk+4YXmdRDOYvWDknklV13RUryd3ZbmPr0ORyaxJoSzzRh4RppnPrG7H/9fFIJjxWcRKX1j1FNxp1PCHhXuqNV/DR/zas3a1um/UMtKtpMcXYkJoCrXn68Be6v6BGOBK/zH78iMHTrVpHISN+ovfZizaq31HT40cEGyeKBnoNtQd+TaWH2XBTtnkb7ogcMN80fG514GTjQs3hzvKeHpt4yptS/9XS8bm3Xyc7gTAnxt6aDVAjH406yPqh46vqQ0LFg=='}
+2020-08-17 12:59:48,865 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 12:59:48,865 INFO transport.py Отправлено сообщение для пользователя test2
+2020-08-17 12:59:48,868 DEBUG client_main_window.py Отправлено сообщение для test2: How are you&
+2020-08-17 12:59:49,186 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1597658388.8561995, 'mess_text': 'a1Y0YqVfTOSopU9w4A97hTkrZwNPWfJkORE/PEyV/fhb9q/Pvah/SOqNFTVGHVu/aDFAV71wPbclagY8cPnvLk+4YXmdRDOYvWDknklV13RUryd3ZbmPr0ORyaxJoSzzRh4RppnPrG7H/9fFIJjxWcRKX1j1FNxp1PCHhXuqNV/DR/zas3a1um/UMtKtpMcXYkJoCrXn68Be6v6BGOBK/zH78iMHTrVpHISN+ovfZizaq31HT40cEGyeKBnoNtQd+TaWH2XBTtnkb7ogcMN80fG514GTjQs3hzvKeHpt4yptS/9XS8bm3Xyc7gTAnxt6aDVAjH406yPqh46vqQ0LFg=='}
+2020-08-17 12:59:49,186 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1597658388.8561995, 'mess_text': 'a1Y0YqVfTOSopU9w4A97hTkrZwNPWfJkORE/PEyV/fhb9q/Pvah/SOqNFTVGHVu/aDFAV71wPbclagY8cPnvLk+4YXmdRDOYvWDknklV13RUryd3ZbmPr0ORyaxJoSzzRh4RppnPrG7H/9fFIJjxWcRKX1j1FNxp1PCHhXuqNV/DR/zas3a1um/UMtKtpMcXYkJoCrXn68Be6v6BGOBK/zH78iMHTrVpHISN+ovfZizaq31HT40cEGyeKBnoNtQd+TaWH2XBTtnkb7ogcMN80fG514GTjQs3hzvKeHpt4yptS/9XS8bm3Xyc7gTAnxt6aDVAjH406yPqh46vqQ0LFg=='}
+2020-08-17 12:59:49,186 DEBUG transport.py Получено сообщение от пользователя test1:a1Y0YqVfTOSopU9w4A97hTkrZwNPWfJkORE/PEyV/fhb9q/Pvah/SOqNFTVGHVu/aDFAV71wPbclagY8cPnvLk+4YXmdRDOYvWDknklV13RUryd3ZbmPr0ORyaxJoSzzRh4RppnPrG7H/9fFIJjxWcRKX1j1FNxp1PCHhXuqNV/DR/zas3a1um/UMtKtpMcXYkJoCrXn68Be6v6BGOBK/zH78iMHTrVpHISN+ovfZizaq31HT40cEGyeKBnoNtQd+TaWH2XBTtnkb7ogcMN80fG514GTjQs3hzvKeHpt4yptS/9XS8bm3Xyc7gTAnxt6aDVAjH406yPqh46vqQ0LFg==
+2020-08-17 13:00:02,514 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1597658402.5142658, 'mess_text': 'jehvTqxpbNqoLhFnKoUoNcUiTHoOB68iEYE606GAKkKGCEmqc5u0RaFIlSGbkJdxtAkfjrYmTlxUnF3YSU/HmYozkJ0NlVoadk1/4nyBQYfNmgVcJgInxVwJxFIzAFgiWllvvS0Eyyz6RkIbmfZiu0EGmpQTv4m2OKaX6dYDe/EHAfnCVqkpBgatZ9kProfK4FHQDsZDLYhEOUfDwtg45vleUaJZcP4COHrd1ddRE2vEerihc2luUorGjAcnqoz7/MhuNG0jBrpyr+SXKodV0l9WbAUcuBETSWtyhjFbexRM/HRpIcMfQGJGTzARf5KozDk6oE/kQwD32vzEgtvjRQ=='}
+2020-08-17 13:00:03,037 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1597658402.5142658, 'mess_text': 'jehvTqxpbNqoLhFnKoUoNcUiTHoOB68iEYE606GAKkKGCEmqc5u0RaFIlSGbkJdxtAkfjrYmTlxUnF3YSU/HmYozkJ0NlVoadk1/4nyBQYfNmgVcJgInxVwJxFIzAFgiWllvvS0Eyyz6RkIbmfZiu0EGmpQTv4m2OKaX6dYDe/EHAfnCVqkpBgatZ9kProfK4FHQDsZDLYhEOUfDwtg45vleUaJZcP4COHrd1ddRE2vEerihc2luUorGjAcnqoz7/MhuNG0jBrpyr+SXKodV0l9WbAUcuBETSWtyhjFbexRM/HRpIcMfQGJGTzARf5KozDk6oE/kQwD32vzEgtvjRQ=='}
+2020-08-17 13:00:03,037 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1597658402.5142658, 'mess_text': 'jehvTqxpbNqoLhFnKoUoNcUiTHoOB68iEYE606GAKkKGCEmqc5u0RaFIlSGbkJdxtAkfjrYmTlxUnF3YSU/HmYozkJ0NlVoadk1/4nyBQYfNmgVcJgInxVwJxFIzAFgiWllvvS0Eyyz6RkIbmfZiu0EGmpQTv4m2OKaX6dYDe/EHAfnCVqkpBgatZ9kProfK4FHQDsZDLYhEOUfDwtg45vleUaJZcP4COHrd1ddRE2vEerihc2luUorGjAcnqoz7/MhuNG0jBrpyr+SXKodV0l9WbAUcuBETSWtyhjFbexRM/HRpIcMfQGJGTzARf5KozDk6oE/kQwD32vzEgtvjRQ=='}
+2020-08-17 13:00:03,037 DEBUG transport.py Получено сообщение от пользователя test2:jehvTqxpbNqoLhFnKoUoNcUiTHoOB68iEYE606GAKkKGCEmqc5u0RaFIlSGbkJdxtAkfjrYmTlxUnF3YSU/HmYozkJ0NlVoadk1/4nyBQYfNmgVcJgInxVwJxFIzAFgiWllvvS0Eyyz6RkIbmfZiu0EGmpQTv4m2OKaX6dYDe/EHAfnCVqkpBgatZ9kProfK4FHQDsZDLYhEOUfDwtg45vleUaJZcP4COHrd1ddRE2vEerihc2luUorGjAcnqoz7/MhuNG0jBrpyr+SXKodV0l9WbAUcuBETSWtyhjFbexRM/HRpIcMfQGJGTzARf5KozDk6oE/kQwD32vzEgtvjRQ==
+2020-08-17 13:00:03,037 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 13:00:03,037 INFO transport.py Отправлено сообщение для пользователя test1
+2020-08-17 13:00:03,040 DEBUG client_main_window.py Отправлено сообщение для test1: +-
+2020-08-17 13:07:38,811 DEBUG client.py Args loaded
+2020-08-17 13:07:49,873 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2020-08-17 13:07:49,873 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2020-08-17 13:07:50,017 DEBUG client.py Keys sucsessfully loaded.
+2020-08-17 13:07:50,037 INFO transport.py Попытка подключения №1
+2020-08-17 13:07:50,038 DEBUG transport.py Connection established.
+2020-08-17 13:07:50,038 DEBUG transport.py Starting auth dialog.
+2020-08-17 13:07:50,068 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2020-08-17 13:07:50,069 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1597658870.069299, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlTeOPYpkB+RdhQv3E97L\nWWa1K1rMlRuq1z5/wihDVarU8q73BcAvt5INbxJUOOCybTHOKrbk1XO6TFqFIJHP\nPzUogubPjuKN12zMOYvUckyxQt5VUX5BouHH80VYztQweawddI1SndIEaSGFPEgp\nV5i1tlqeDUzbAv9r8lNrQy7Tg63cnqPV7swxAez6iUHHfayBD7by+a5SGFYZ4f6g\n7jCc5aWlEijyCnWS0G0Nn/XsglXZDNpXHiSSnG1IplehQ09N31Xg1rS8syoZ9IEt\nkA+BXZ8rQ6b20XYMrVovyk8aDErjzrX+9y0V5mQpd9u/gKcL7rpQFo3qxLa1Vki1\ntwIDAQAB\n-----END PUBLIC KEY-----'}}
+2020-08-17 13:07:50,547 DEBUG transport.py Server response = {'response': 511, 'bin': '14232bbf5db6ce0a14a067ca3132b3523e0c53c82c93c4d6384c2d8a2705d505eb657d70acfb71cb223786ce5385f20fe4ab195ec2d4600b0749070c8f2ea605'}.
+2020-08-17 13:07:50,548 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2020-08-17 13:07:50,548 DEBUG transport.py Запрос списка известных пользователей test1
+2020-08-17 13:07:51,068 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2020-08-17 13:07:51,068 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1597658871.068558, 'user': 'test1'}
+2020-08-17 13:07:51,573 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test3', 'test2']}
+2020-08-17 13:07:51,581 DEBUG client.py Transport ready.
+2020-08-17 13:07:51,582 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2020-08-17 13:07:55,805 DEBUG transport.py Запрос публичного ключа для test2
+2020-08-17 13:07:56,626 DEBUG client_main_window.py Загружен открытый ключ для test2
+2020-08-17 13:07:59,792 DEBUG transport.py Транспорт завершает работу.
+2020-08-17 13:08:00,171 DEBUG transport.py Потеряно соединение с сервером.
